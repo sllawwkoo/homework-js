@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,800&display=swap");
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+body {
+	background: url("../img/bg.webp") center / cover no-repeat fixed;
+}
+
+.wrapper {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Roboto", serif;
+	padding-top: 50px;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 800;
+	font-size: 44px;
+	font-weight: 800;
+	line-height: 1.5;
+	color: #000;
+	text-align: center;
+	margin-bottom: 50px;
+	text-shadow: 0px 0px 20px #999;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.list__link{
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #000;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.list__link:hover{
+	color: #5565f7;
+}
+
+.list__item::marker{
+	font-size: 24px;
+	line-height: 1.5;
+}
