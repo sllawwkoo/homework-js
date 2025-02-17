@@ -13,7 +13,7 @@ if (confirm("Почати тестування?")) {
 		prompt("Введіть кількість випадкових чисел", "4")
 	);
 
-	document.write(`<ul>`);
+	document.write(`<ul class="list">`);
 
 	for (let i = 0; i < amountRenderNumbers; i++) {
 		const renderNumber = 1 + Math.floor(Math.random() * 100);
