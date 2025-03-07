@@ -13,7 +13,7 @@ function getRandomArray(arrayLength, minValue = 1, maxValue = 10000) {
 
 const baseArray = getRandomArray(10);
 
-const newArray = baseArray.filter((el, i, arr) => el > arr[i - 1]);
+const newArray = baseArray.filter((el, i, arr) => el > arr[i - 1] && i > 0);
 
 document.write(`
 <p>Масив цін:[${baseArray}]</p>

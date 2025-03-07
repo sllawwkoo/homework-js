@@ -13,7 +13,12 @@ function getRandomArray(arrayLength, minValue = 1, maxValue = 10000) {
 
 const baseArray = getRandomArray(10);
 
-const countPricesAbove1000 = baseArray.filter((el) => el > 1000).length;
+// const countPricesAbove1000 = arr2.filter((el) => el > 1000).length;
+
+const countPricesAbove1000 = baseArray.reduce(
+	(count, el) => (el > 1000 ? count + 1 : count),
+	0
+);
 
 document.write(`
 <p>Масив цін:[${baseArray}]</p>

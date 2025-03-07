@@ -14,7 +14,7 @@ function getRandomArray(arrayLength, minValue = 1, maxValue = 10000) {
 const baseArray = getRandomArray(10);
 
 const changePriceCount = baseArray.reduce(
-	(count, el, index, arr) => (el !== arr[index - 1] ? count + 1 : count),
+	(count, el, index, arr) => (el !== arr[index - 1] && index > 0  ? count + 1 : count),
 	0
 );
 

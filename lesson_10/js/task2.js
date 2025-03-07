@@ -11,9 +11,14 @@ function getRandomArray(arrayLength, minValue = 1, maxValue = 10000) {
 
 const baseArray = getRandomArray(10);
 
-const newArray = baseArray
-	.map((element, index) => (element > 1000 ? index : null))
-	.filter((index) => index !== null);
+// const newArray = baseArray
+// 	.map((element, index) => (element > 1000 ? index : null))
+// 	.filter((index) => index !== null);
+
+const newArray = baseArray.reduce((arrNew, el, index) => {
+	if (el > 1000) arrNew.push(index);
+	return arrNew;
+}, []);
 
 document.write(`
 <p>Масив цін:[${baseArray}]</p>
