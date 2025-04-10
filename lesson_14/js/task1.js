@@ -130,7 +130,7 @@ console.log("Cписок усіх спонсорів");
 console.table(totalSponsorsList);
 
 document.write(`
-	<p>34 Загальний список усіх спонсорів: <br >${JSON.stringify(
+	<p>4. Загальний список усіх спонсорів: <br >${JSON.stringify(
 		totalSponsorsList
 	)}</p>
 	`);
@@ -147,7 +147,7 @@ for (const company of companies) {
 }
 
 document.write(`
-	<p>34 Набфльший прибуток був <strong>${maxCost}</strong> у <strong>${maxCostYear}</strong> році </p>
+	<p>5. Найбільший прибуток був <strong>${maxCost}</strong> у <strong>${maxCostYear}</strong> році </p>
 	`);
 
 // 6) упорядкувати список за спаданням прибутку
