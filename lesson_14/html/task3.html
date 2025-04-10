@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Завдання №3</title>
+	<style>
+		img {
+			width: 600px;
+		}
+
+		.task__text,
+		.task__item {
+			font-size: 20px;
+		}
+
+		ol>li.task__item {
+			list-style: decimal;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №3</h1>
+				<p>Ось приклад відповіді з одного з сайтів (масив об’єктів з інформацією про товари). <br> Весь текст масиву, що в кінці документу скопіюєте в код. </p>
+				<img src="../img/task_3.png" alt="task">
+				<ol class="task__list">
+					<li class="task__item">Загальну вартість (нові ціни - <strong>price</strong>)</li>
+					<li class="task__item">Знайти кількість товарів, у яких ціна зменшилась (<strong>price < old_price</strong>).</li>
+					<li class="task__item">Товари, які доступні (sell_status:"<strong>available</strong>")</li>
+					<li class="task__item">Cформувати новий список об”єктів тільки доступних для продажу товарів, які міститимуть тільки ідентифікатор товару (<strong>id</strong>), нову ціну (<strong>pric</strong>), стару ціну (<strong>old_price</strong>), та ціну у доларах (<strong>usd_price</strong>)</li>
+				</ol>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<script src="../js/task3.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

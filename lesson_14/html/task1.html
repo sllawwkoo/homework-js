@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Завдання №1</title>
+	<style>
+		pre {
+			font-size: 18px;
+		}
+
+		.task__text,
+		.task__item {
+			font-size: 20px;
+		}
+
+		ol>li.task__item {
+			list-style: decimal;
+			margin-left: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link active">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №1</h1>
+				<p>Описати масив об'єктів – сайтів розроблених компанією з такими властивостями:</p>
+				<pre>
+----- Властивості ------
+- назва компанії на час розробки (назву періодично змінюють)
+- власник компанії
+- спонсори (масив спонсорів)
+      * прізвище спонсора
+      * ім’я  спонсора
+      * сума вкладень спонсора
+- рік випуску
+- вартість сайту
+				</pre>
+				<p class="task__text">Знайти:</p>
+				<ol class="task__list">
+					<li class="task__item">загальну вартість усіх сайтів</li>
+					<li class="task__item">кількість сайтів, що було зроблено між 2000 та 2009 рр.</li>
+					<li class="task__item">кількість сайтів, де сума спонсорських вкладень була більшою за 100000</li>
+					<li class="task__item">створити загальний список усіх спонсорів (поки можуть повторюватись, просто зібрати усі у масив)</li>
+					<li class="task__item">знайти рік, коли прибуток був найбільшим</li>
+					<li class="task__item">упорядкувати список за спаданням прибутку</li>
+					<li class="task__item">cтворити 2 окремих списки з копіями об'єктів, що містять сайти з вартість до 10000 і більше 10000</li>
+				</ol>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<script src="../js/task1.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
