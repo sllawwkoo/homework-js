@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Завдання №5</title>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">На перевірку</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+				</ul>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">Решта завдань</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link active">Завдання №5</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №5</h1>
+				<p>Дано два класи MultChecker (клас для перевірки таблиці множення - рандомно генеруються числа, які треба перемножати), AddChecker (клас для перевірки додавання - рандомно генеруються числа у заданому діапазоні, які треба додавати). Обидва класи надсилають результати тестування об'єкту класу Hystory, який зберігає історію тестування у масиві у вигляді об'єктів. <br> Приклад:<br> testsList= [ {firstNum:1, secondNum:5,opration:’*’, userAnswer:7, correctAnswer:5}, {firstNum:3, secondNum:4,opration:’+’, userAnswer:7, correctAnswer:7}, ] <br> Можна створити окремий клас TestData, який описує один такий тест і у якому будуть ці поля. Розробити клас TestManager, який використовуючи ці класи за допомогою таймера періодично генерує якісь N задач (рандомно вибираємо, що опитувати: додавання чи множення) і проводить опитування. Результати тестування додаються в об’єкт History. Зробити так, щоб об'єкт такого класу можна було створити тільки один. Коли зроблено ці N задач вивести усю історію на екран.</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<script src="../js/task5.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
