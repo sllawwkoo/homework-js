@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №6</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 650px;
+			font-family: "Shantell Sans", serif;
+		}
+
+		.grades {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			padding: 40px 30px;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+		}
+
+		.grades__line {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		label {
+			flex-basis: 40%;
+		}
+
+		#countGrades {
+			max-width: 40%;
+		}
+
+		input {
+			text-align: center;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 24px;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			-moz-appearance: textfield;
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input::placeholder {
+			font-size: 20px;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+
+		.grades__operations {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding-block: 10px;
+		}
+
+		.grades__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: "Shantell Sans", serif;
+			font-size: 26px;
+			font-weight: 700;
+			padding-block: 10px;
+			width: 86%;
+			border-radius: 10px;
+			color: #333333;
+			background-color: #b9c7da;
+			box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.2s ease;
+			will-change: background-color, box-shadow, color;
+		}
+
+		.grades__button:hover,
+		.grades__button:active {
+			background-color: #abb5c4;
+		}
+
+		.grades__button:active {
+			color: rgba(51, 51, 51, 0.7);
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		.grades__table {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.grades__grid {
+			display: grid;
+			gap: 20px;
+			grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+			grid-auto-rows: 1fr;
+			padding: 15px;
+			border-radius: 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		.grades__cell {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 600;
+			font-size: 26px;
+			padding: 5px 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		.grades__input {
+			width: 100%;
+		}
+
+		.grades__result {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+		}
+
+		.grades__result span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 175px;
+			height: 40px;
+			font-weight: 600;
+			font-size: 26px;
+			padding: 5px 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task6.html" class="sidebar__link active">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task7.html" class="sidebar__link">Завдання №7</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №6</h1>
+				<p>Користувач задає кількість оцінок і натискає на кнопку «get table». В результаті формується таблиця з input, куди користувач вводить оцінки. Після цього натискає на кнопку “get sum” і знаходить середнє значення.</p>
+				<img src="../img/task6.png" alt="task6">
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="grades">
+						<div class="grades__line">
+							<label for="countGrades">Кількість оцінок:</label>
+							<input type="number" id="countGrades" placeholder="Кількість оцінок">
+						</div>
+						<div class="grades__operations">
+							<button class="grades__button" id="creatTable">Створити таблицю</button>
+						</div>
+						<!-- <div class="grades__table">
+							<div class="grades__grid">
+								<div class="grades__cell">
+									<input type="number" class="grades__input" placeholder="Оцінка">
+								</div>
+								<div class="grades__cell">
+									<input type="number" class="grades__input" placeholder="Оцінка">
+								</div>
+								<div class="grades__cell">
+									<input type="number" class="grades__input" placeholder="Оцінка">
+								</div>
+								<div class="grades__cell">
+									<input type="number" class="grades__input" placeholder="Оцінка">
+								</div>
+								<div class="grades__cell">
+									<input type="number" class="grades__input" placeholder="Оцінка">
+								</div>
+							</div>
+							<div class="grades__result">
+								<button class="grades__button" id="getSum">Середній бал</button>
+								<span id="result"></span>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<script src="../js/task6.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

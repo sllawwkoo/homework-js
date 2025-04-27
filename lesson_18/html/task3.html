@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №3</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 600px;
+			font-family: "Shantell Sans", serif;
+		}
+
+		.years {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 40px 30px;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+		}
+
+		.years__title {
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 15px;
+			font-weight: 700;
+		}
+
+		.years__line {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		label {
+			flex-basis: 40%;
+		}
+
+		input {
+			max-width: 40%;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 24px;
+			text-align: center;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			-moz-appearance: textfield;
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+
+		.years__result {
+			font-size: 20px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.years__result span:first-child {
+			flex-basis: 40%;
+		}
+
+		.years__result span:last-child {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 175px;
+			height: 40px;
+			font-weight: 600;
+			font-size: 26px;
+			padding: 5px 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task6.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task7.html" class="sidebar__link">Завдання №7</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №3</h1>
+				<p>Користувач задає рік народження. Визначити кількість років користувача.</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="years">
+						<h3 class="years__title">Скільки вам років?</h3>
+						<div class="years__line">
+							<label for="birthYear">Ваш рік народження:</label>
+							<input type="number" id="birthYear">
+						</div>
+						<div class="years__result">
+							<span>В 2025 році вам виповнилося чи буде:</span>
+							<span id="result"></span>
+						</div>
+					</div>
+				</div>
+				<script src="../js/task3.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

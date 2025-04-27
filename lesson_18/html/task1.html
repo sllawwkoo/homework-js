@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №1</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 600px;
+			font-family: "Shantell Sans", serif;
+		}
+
+		.calculator {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 40px 30px;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+		}
+
+		.calculator__title {
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 15px;
+			font-weight: 700;
+		}
+
+		.calculator__line {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		label {
+			flex-basis: 38%;
+		}
+
+		input {
+			max-width: 40%;
+			font-family:"Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 24px;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			-moz-appearance: textfield;
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+
+		.calculator__operations {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			gap: 10px;
+			padding-block: 50px;
+		}
+
+		.calculator__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70px;
+			aspect-ratio: 1 / 1;
+			border-radius: 50%;
+			color: #333333;
+			background-color: #b9c7da;
+			box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.calculator__button:hover, .calculator__button:active {
+			background-color: #abb5c4;
+		}
+
+		.calculator__button:active {
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		.calculator__button:active.calculator__button svg {
+			color: rgba(51, 51, 51, 0.5);
+		}
+
+		.calculator__button svg {
+			width: 60%;
+			aspect-ratio: 1 / 1;
+			transition: color 0.3s ease;
+		}
+
+		.calculator__result {
+			font-size: 20px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.calculator__result span {
+			display: flex;
+			align-items: center;
+			width: 150px;
+			height: 40px;
+			font-weight: 600;
+			font-size: 26px;
+			padding: 5px 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link active">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task6.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task7.html" class="sidebar__link">Завдання №7</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №1</h1>
+				<p>Розробити калькулятор </p>
+				<img src="../img/task1.png" alt="task1">
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="calculator">
+						<h3 class="calculator__title">Калькулятор</h3>
+						<div class="calculator__line">
+							<label for="firstNumber">Перше число:</label>
+							<input type="number" id="firstNumber">
+						</div>
+						<div class="calculator__line">
+							<label for="secondNumber">Друге число:</label>
+							<input type="number" id="secondNumber">
+						</div>
+						<div class="calculator__operations">
+							<button class="calculator__button" id="add">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g stroke-width="0"></g>
+									<g stroke-linecap="round" stroke-linejoin="round"></g>
+									<g>
+										<path d="M4 12H20M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</button>
+							<button class="calculator__button" id="subtract">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g stroke-width="0"></g>
+									<g stroke-linecap="round" stroke-linejoin="round"></g>
+									<g>
+										<path d="M6 12L18 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</button>
+							<button class="calculator__button" id="multiply">
+								<svg fill="currentColor" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+									<g stroke-width="0"></g>
+									<g stroke-linecap="round" stroke-linejoin="round"></g>
+									<g>
+										<path d="M11.383 13.644A1.03 1.03 0 0 1 9.928 15.1L6 11.172 2.072 15.1a1.03 1.03 0 1 1-1.455-1.456l3.928-3.928L.617 5.79a1.03 1.03 0 1 1 1.455-1.456L6 8.261l3.928-3.928a1.03 1.03 0 0 1 1.455 1.456L7.455 9.716z"></path>
+									</g>
+								</svg>
+							</button>
+							<button class="calculator__button" id="divide">
+								<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g stroke-width="0"></g>
+									<g stroke-linecap="round" stroke-linejoin="round"></g>
+									<g>
+										<path d="M5 11C4.44772 11 4 10.5523 4 10C4 9.44772 4.44772 9 5 9H15C15.5523 9 16 9.44772 16 10C16 10.5523 15.5523 11 15 11H5Z" fill="currentColor"></path>
+										<circle cx="10" cy="5.5" r="1.5" fill="currentColor"></circle>
+										<circle cx="10" cy="14.5" r="1.5" fill="currentColor"></circle>
+									</g>
+								</svg>
+							</button>
+						</div>
+						<div class="calculator__result">Результат: <span id="result"></span></div>
+					</div>
+				</div>
+				<script src="../js/task1.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
