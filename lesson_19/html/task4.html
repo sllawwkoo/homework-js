@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №4</title>
+	<style>
+		.result-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			padding: 50px;
+			width: 100%;
+			max-width: 800px;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 40px;
+			border: 1px solid rgba(0, 0, 0, 0.5);
+			background-color: #b9c7da;
+			border-radius: 20px;
+		}
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.column__title {
+			font-size: 18px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			width: 200px;
+			text-align: center;
+		}
+
+		.column__title span {
+			width: 100%;
+		}
+
+		table {
+			border-collapse: collapse;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			border-radius: 5px;
+			border: 2px solid transparent;
+		}
+
+		table.active {
+			border: 2px solid red;
+		}
+
+		td {
+			padding: 12px 15px;
+			border: 1px solid #dddddd;
+			font-size: 26px;
+			cursor: pointer;
+		}
+
+		tr {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link active">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task6.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task7.html" class="sidebar__link">Завдання №7</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №4</h1>
+				<p>Дано 3 таблиці розмірності 3*3 з випадковими числами. Якщо відбувається клік на якійсь із клітинок, то до відповідної таблиці додається червона рамка (спробуйте додати можливість відображення кількості кліків біля назви таблиці з використанням відповідно доданого для цього атрибута).</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<!-- <div class="column">
+						<h3 class="column__title">
+							<span>Таблиця №1</span> 
+							<span id="count1">Кількість кліків: 0</span>
+						</h3>
+					</div> -->
+				</div>
+				<script src="../js/task4.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

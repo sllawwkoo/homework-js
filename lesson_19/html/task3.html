@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №3</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 700px;
+			font-family: "Shantell Sans", serif;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+		}
+
+		.list__box {
+			display: flex;
+			justify-content: center;
+			/* align-items: center; */
+			gap: 60px;
+			padding: 20px 30px;
+			margin-bottom: 5px;
+		}
+
+		.list__operations {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding-block: 10px;
+		}
+
+		.list__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: "Shantell Sans", serif;
+			font-size: 26px;
+			font-weight: 700;
+			padding-block: 10px;
+			width: 86%;
+			border-radius: 10px;
+			color: #333333;
+			background-color: #b9c7da;
+			box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.2s ease;
+			will-change: background-color, box-shadow, color;
+		}
+
+		.list__button:hover,
+		.list__button:active {
+			background-color: #abb5c4;
+		}
+
+		.list__button:active {
+			color: rgba(51, 51, 51, 0.7);
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		.list__ul {
+			display: flex;
+			flex-direction: column;
+			/* justify-content: center; */
+			align-items: center;
+			gap: 10px;
+			font-size: 22px;
+			font-weight: 600;
+		
+		}
+
+		.list__li {
+			list-style-type: auto;
+			width: 40px;
+			text-align: center;
+		}
+
+		.list__li::marker {
+			color: #2623dd;
+			font-size: 20px;
+		}	
+
+
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task5.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task6.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task7.html" class="sidebar__link">Завдання №7</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №3</h1>
+				<p>Дано 5 випадковим чином згенерованих нумерованих списків з рандомними числами (кількість елементів у списку випадкова від 1 до 10, елементи випадкові – від 1 до 100). При натисненні на кнопку нумеровані списки з парною кількістю елементів зафарбувати у зелений колір, інші у червоний.</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="list__box">
+						
+					</div>
+					<div class="list__operations">
+						<button class="list__button" id="creatTable">Зафарбувати</button>
+					</div>
+				</div>
+				<script src="../js/task3.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
