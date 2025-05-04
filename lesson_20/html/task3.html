@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №3</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 820px;
+			font-family: "Shantell Sans", serif;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.header-block {
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		.result-block {
+			display: flex;
+			align-items: center;
+		}
+
+		.result-block span:first-child {
+			flex-basis: 53%;
+		}
+
+		.result-block__count {
+			flex-basis: 10%;
+		}
+
+		.items-block {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		button {
+			flex-basis: 22.5%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: "Shantell Sans", serif;
+			font-size: 24px;
+			font-weight: 700;
+			padding-block: 10px;
+			width: 86%;
+			border-radius: 10px;
+			color: #333333;
+			background-color: #b9c7da;
+			box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.2s ease;
+			will-change: background-color, box-shadow, color;
+		}
+
+		button:hover,
+		button:active {
+			background-color: #abb5c4;
+		}
+
+		button:active {
+			color: rgba(51, 51, 51, 0.7);
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+
+		input {
+			/* flex-basis: 20%; */
+			max-width: 22.5%;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 24px;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №3</h1>
+				<p>На сторінці міститься певна кількість кнопок і інпутів. Підраховувати загальну кількість кліків окремо на кнопках і окремо на інпутах.</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="header-block">
+						<p class="result-block"> <span>Кількість кліків на кнопках:</span> <span class="result-block__count" id="resultBtn">0</span>
+						</p>
+						<p class="result-block"> <span>Кількість кліків на інпутах:</span> <span class="result-block__count" id="resultInput">0</span>
+						</p>
+					</div>
+					<div class="items-block">
+				
+					</div>
+				</div>
+				<script src="../js/task3.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
