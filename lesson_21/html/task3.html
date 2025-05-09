@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №3</title>
+	<style>
+		div.task-wrapper__container {
+			max-width: 1000px;
+		}
+
+		.result-wrapper {
+			position: relative;
+			width: 1000px;
+			height: 450px;
+		}
+
+		.house {
+			position: absolute;
+			width: 160px;
+			transition: transform 2s ease;
+			will-change: transform;
+		}
+
+		.house img {
+			width: 100%;
+		}
+
+		.dog {
+			position: absolute;
+			width: 130px;
+			transition: left 2.5s ease;
+			will-change: left;
+		}
+
+		.dog img {
+			width: 100%;
+		}
+
+		.bird {
+			position: absolute;
+			width: 100px;
+			transition: left 2s ease, top 2s ease;
+			will-change: left, top;
+		}
+
+		.bird img {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">Успадкування</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task0.html" class="sidebar__link">Завдання №0</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+				</ul>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">Date</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task11.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task12.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task13.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task14.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task15.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task16.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task17.html" class="sidebar__link">Завдання №7</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task18.html" class="sidebar__link">Завдання №8</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task19.html" class="sidebar__link">Завдання №9</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task20.html" class="sidebar__link">Завдання №10</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task21.html" class="sidebar__link">Завдання №11</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №3</h1>
+				<p>Розробити Класи: <br>
+					<strong>House:</strong> --- властивості --- ● Координата Х ● Координата У ● шлях до зображення ● інтервал оновлення <br> --- методи --- ● генерування елемента розмітки ● оновлення через вказаний інтервал (збільшення або зменшення масштабу (об’єкт не рухається) <br>
+					<strong>Dog:</strong> --- властивості --- ● Координата Х ● Координата У ● шлях до зображення ● інтервал оновлення <br> --- методи --- ● генерування елемента розмітки ● оновлення через вказаний інтервал (випадкове зміщення по горизонталі (зміна координати Х)) <br>
+					<strong>Bird:</strong> --- властивості --- ● Координата Х ● Координата У ● шлях до зображення ● інтервал оновлення <br> --- методи --- ● генерування елемента розмітки ● оновлення через вказаний інтервал (випадкове переміщення у довільному напрямку) <br> Подумайте яким має бути спільний клас предок.
+				</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+				</div>
+				<script src="../js/task3.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

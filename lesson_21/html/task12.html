@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Завдання №2</title>
+	<style>
+		.result-wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 15px;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 800px;
+			min-height:  151px;
+		}
+
+		.result__line {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 30px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		label {
+			flex-basis: 50%;
+		}
+
+		input {
+			max-width: 45%;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			font-size: 24px;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+
+		.result-wrapper p {
+			font-size: 20px;
+			font-weight: 600;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">Успадкування</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task0.html" class="sidebar__link">Завдання №0</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task4.html" class="sidebar__link">Завдання №4</a>
+					</li>
+				</ul>
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<h3 class="sidebar__title">Date</h3>
+					</li>
+					<li class="sidebar__item">
+						<a href="task11.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task12.html" class="sidebar__link active">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task13.html" class="sidebar__link">Завдання №3</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task14.html" class="sidebar__link">Завдання №4</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task15.html" class="sidebar__link">Завдання №5</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task16.html" class="sidebar__link">Завдання №6</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task17.html" class="sidebar__link">Завдання №7</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task18.html" class="sidebar__link">Завдання №8</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task19.html" class="sidebar__link">Завдання №9</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task20.html" class="sidebar__link">Завдання №10</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task21.html" class="sidebar__link">Завдання №11</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №2</h1>
+				<p>Вводимо час початку процедури (процедура триває 30хв). Визначити, чи процедура ще триває.</p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="result__line">
+						<label for="time">Введіть час початку порцедури:</label>
+						<input type="datetime-local" id="time">
+					</div>
+					<p id="result"></p>
+				</div>
+				<script src="../js/task12.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
