@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<title>Завдання №3</title>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link active">Завдання №3</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task3-wrapper__main">
+			<div class="task3-wrapper__container">
+				<h1 class="task3-wrapper__title">Завдання №3</h1>
+				<h2 class="task3-wrapper__subtitle">Регулярні вирази</h2>
+				<hr>
+				<div class="task3-wrapper__result">
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 1.</h3>
+							<div class="task__text">Дано масив рядків. Вивести ті, у яких є цифри (використати метод test та регулярні вирази).</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data1"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result1"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 2.</h3>
+							<div class="task__text">Дано масив рядків. Вивести ті, у яких немає цифр.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data2"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 3.</h3>
+							<div class="task__text">Дано масив рядків. Вивести ті, у яких є голосні літери.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data3"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result3"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 4.</h3>
+							<div class="task__text">Дано масив рядків. Вивести ті, у яких немає голосних літер.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data4"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result4"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 5.</h3>
+							<div class="task__text">Дано масив рядків. Вивести ті, у яких є або цифра 1 або цифра 3.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data5"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result5"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 6.</h3>
+							<div class="task__text">Дано рядок тексту, вивести усі числа, які є у тексті.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data6"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result6"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 7.</h3>
+							<div class="task__text">Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data7"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result7"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 8.</h3>
+							<div class="task__text">Дано рядок тексту. Вивести усі складові, які розділені розділовими знаками.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data8"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result8"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 9.</h3>
+							<div class="task__text">Дано рядок тексту. Перевірити, чи містить він дату у форматі dd.mm.yyyy (dd- день, mm- місяць, yyyy- рік).</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data9"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result9"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 10.</h3>
+							<div class="task__text">Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data10"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result10"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 11.</h3>
+							<div class="task__text">Визначити чи може бути рядок тексту номером банківської картки (приклад: «4142-3433-2323-3434»). Знайти усі такі номери.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data11"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result11"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 12.</h3>
+							<div class="task__text">Дано адресу сайту. Визначити, чи є він урядовим (містить домен “gov”).</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data12"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result12"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 13.</h3>
+							<div class="task__text">Вибрати усі роки після 2021 року з отриманого повідомлення.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data13"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result13"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 14.</h3>
+							<div class="task__text">Дано номер телефону. Перевірити, чи є цей телефон телефоном з України (починаєтсья на «+38»)</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data14"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result14"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 15.</h3>
+							<div class="task__text">Користувач вводить прізвище та ім’я в одному рядку через пробіл. Замінити пробіл на дефіс.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data15"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result15"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 16.</h3>
+							<div class="task__text">Користувач вводить дату у форматі «день.місяць.рік». Отримати рядкове представлення дати у форматі «день/місяць/рік»</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data16"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result16"></span>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="task__header">
+							<h3 class="task__title">Задача 17.</h3>
+							<div class="task__text">Користувач вводить день (номер дня (0-6) або «sun,mon,tue,wed,thu,fri,sat»). Визначити, чи є це день вихідним.</div>
+						</div>
+						<div class="task__result">
+							<div class="task__condition">
+								<span>Дано:</span>
+								<span id="data17"></span>
+							</div>
+							<div class="task__solution">
+								<span>Результат:</span>
+								<span id="result17"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="../js/task3.js"></script>
+		</main>
+	</div>
+</body>
+
+</html>

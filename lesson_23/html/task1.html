@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Shantell+Sans:regular,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Завдання №1</title>
+	<style>
+		.result-wrapper {
+			padding: 30px 50px;
+			width: 100%;
+			max-width: 600px;
+			font-family: "Shantell Sans", serif;
+		}
+
+		.storage {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 40px 30px;
+			border: 1px solid rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			background-color: #b9c7da;
+		}
+
+		.storage__line {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		label {
+			flex-basis: 55%;
+		}
+
+		input {
+			width: 100px;
+			height: 40px;
+			font-family: "Shantell Sans", serif;
+			font-weight: 600;
+			padding: 5px 10px;
+			background-color: #b9c7da;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			border: 2px solid transparent;
+			transition: border 0.3s ease;
+		}
+
+		input:focus {
+			outline: none;
+			border: 2px solid #747c86;
+		}
+
+		.storage__result {
+			font-size: 20px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+
+		.storage__result span:first-child {
+			flex-basis: 55%;
+		}
+
+		.storage__result span:last-child {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 40px;
+			font-weight: 600;
+			font-size: 26px;
+			padding: 5px 10px;
+			box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task-wrapper">
+		<aside class="task-wrapper__aside">
+			<nav class="task-wrapper__sidebar sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="../index.html" class="sidebar__link">До списку завдань</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task1.html" class="sidebar__link active">Завдання №1</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task2.html" class="sidebar__link">Завдання №2</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="task3.html" class="sidebar__link">Завдання №3</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="task-wrapper__main">
+			<div class="task-wrapper__container">
+				<h1 class="task-wrapper__title">Завдання №1</h1>
+				<p>Користувач може змінювати колір фону, що вибирає користувач з використанням input type="color". Зберігати цей колір і відновлювати при наступному відкритті. Також зберігати і відображати кількість змін протягом одного сеансу. </p>
+				<hr>
+				<h2 class="task-wrapper__subtitle">Рішення:</h2>
+				<div class="result-wrapper">
+					<div class="storage">
+						<div class="storage__line">
+							<label for="color">Виберіть кольор:</label>
+							<input type="color" id="color">
+						</div>
+						<div class="storage__result">
+							<span>Кількість змін кольору:</span>
+							<span id="resultColor">0</span>
+						</div>
+					</div>
+				</div>
+				<script src="../js/task1.js"></script>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
